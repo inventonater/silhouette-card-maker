@@ -1,0 +1,19 @@
+{
+  "defaults": {
+    "variations": 8,
+    "size": "1024x1536",
+    "quality": "high",
+    "thinking": "high"
+  },
+  "cards": [
+    {
+      "id": "ember_drake",
+      "prompt": "Turn this into a Magic: The Gathering style card. A fierce red ember drake bursting from a volcano, dynamic action pose, dramatic lighting, full card frame with title, type line, mana cost, art box, and text box. High detail fantasy illustration."
+    },
+    {
+      "id": "tidecaller_mage",
+      "prompt": "A Magic: The Gathering style blue card depicting a serene tidecaller mage summoning a wave, intricate robes, glowing runes, ornate card border, title bar, mana cost, rules text box. Painterly fantasy art.",
+      "variations": 4
+    }
+  ]
+}

@@ -110,6 +110,8 @@ You can find all the cutting templates for Silhouette Studio in [`cutting_templa
 
 Plugins streamline the process for acquiring card images for various games.
 
+The [AI Card Generator plugin](plugins/ai_gen/README.md) generates custom MTG-style cards from your own prompts using OpenAI's **`gpt-image-2`** image model, lets you curate the variations, and builds the print PDF + cutting template — no existing card images required.
+
 The [Magic: The Gathering plugin](plugins/mtg/README.md) supports various decklist formats, including **Archidekt**, **CubeCobra**, **Deckstats**, **MPCFill**, **MTGA**, **MTGO**, **Moxfield**, and **Scryfall** formats.
 
 The [Pokemon plugin](plugins/pokemon/README.md) supports **Limitless TCG** format.

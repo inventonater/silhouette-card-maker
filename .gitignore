@@ -14,6 +14,10 @@ game/output/*
 game/decklist/*
 !game/decklist/README.md
 
+# AI-generated candidate images are local artifacts; keep the folder, not its contents
+game/candidates/*
+!game/candidates/.gitkeep
+
 data
 
 images/*.xcf
