@@ -10,7 +10,6 @@ The project consists of:
 - Python scripts for PDF generation and offset calibration
 - Silhouette Studio cutting templates
 - Plugins for fetching card images from various TCG databases
-- A Hugo documentation site
 
 ## Directory Structure
 
@@ -38,27 +37,14 @@ silhouette-card-maker/
 │   ├── flesh_and_blood/   # Flesh and Blood
 │   ├── star_wars_unlimited/ # Star Wars: Unlimited
 │   └── ...                # Other TCG plugins
-├── hugo/                  # Hugo documentation site
-│   ├── content/           # Markdown content
-│   ├── static/            # Static assets (images)
-│   └── themes/hextra/     # Hugo theme (submodule)
 └── README.md              # Main documentation
 ```
 
-## Documentation Sync Requirement
+## Documentation
 
-**IMPORTANT:** The README.md and Hugo site documentation are closely aligned and must be kept in sync.
+End-user documentation lives in `README.md` and the per-plugin `plugins/<game>/README.md` files. The card/paper size tables in `README.md` are generated — run `generate_readme_tables.py` after changing `assets/layouts.json`.
 
-When documentation changes are made, similar changes need to be made in both locations:
-
-| README.md Section | Hugo Content Location |
-|-------------------|----------------------|
-| Root README.md | `hugo/content/_index.md` |
-| `create_pdf.py` docs | `hugo/content/docs/create.md` |
-| `offset_pdf.py` docs | `hugo/content/docs/offset.md` |
-| `plugins/<game>/README.md` | `hugo/content/plugins/<game>.md` |
-
-The Hugo site is deployed to: https://alan-cha.github.io/silhouette-card-maker
+> This fork dropped the local Hugo documentation site to keep the repo lean. The hosted docs at https://alan-cha.github.io/silhouette-card-maker reflect upstream (Alan-Cha), not this fork.
 
 ## Script Reference
 
@@ -81,7 +67,7 @@ Run by maintainers to regenerate project artifacts. Not needed for normal card-m
 | `generate_calibration.py` | Generate calibration PDFs for all paper sizes |
 | `generate_dxf.py` | Generate DXF cutting templates from `assets/layouts.json` |
 | `dxf_to_studio3.py` | Convert DXF files to Silhouette Studio `.studio3` format; subcommands: `convert` (single file), `batch` (all DXFs), `calibrate` (record UI coordinates) |
-| `generate_readme_tables.py` | Regenerate the card/paper size tables in `README.md` and Hugo docs |
+| `generate_readme_tables.py` | Regenerate the card/paper size tables in `README.md` |
 
 ### Internal modules
 
@@ -147,17 +133,6 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-## Hugo Site Development
-
-The documentation site uses Hugo with the Hextra theme.
-
-```sh
-cd hugo
-hugo server
-```
-
-The theme is included as a git submodule in `hugo/themes/hextra/`.
-
 ## Supported Card Sizes
 
 | Size | Dimensions | Common Games |
@@ -174,7 +149,6 @@ The theme is included as a git submodule in `hugo/themes/hextra/`.
 - Python scripts use Click for CLI argument parsing
 - Card images are processed with Pillow (PIL)
 - PDFs are generated using reportlab
-- Hugo content uses Hextra shortcodes (e.g., `{{< youtube >}}`, `{{% ref %}}`)
 
 ## Testing Workflow
 

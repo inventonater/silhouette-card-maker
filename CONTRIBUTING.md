@@ -12,7 +12,7 @@ Thank you for contributing! This document explains the project structure and mai
 | `generate_dxf.py` | Maintainers | Regenerate DXF cutting templates |
 | `generate_calibration.py` | Maintainers | Regenerate calibration PDFs |
 | `dxf_to_studio3.py` | Maintainers | Convert DXF → `.studio3` (Silhouette Studio) |
-| `generate_readme_tables.py` | Maintainers | Regenerate size tables in README and Hugo docs |
+| `generate_readme_tables.py` | Maintainers | Regenerate size tables in README |
 
 Internal modules (not run directly): `utilities.py`, `enums.py`, `size_convert.py`, `page_manager.py`, `dxf_manager.py`.
 
@@ -90,7 +90,7 @@ Output goes to `cutting_templates/`.
 python generate_readme_tables.py
 ```
 
-This updates the card/paper size tables in `README.md` and the corresponding Hugo content.
+This updates the card/paper size tables in `README.md`.
 
 ### 5. Regenerate calibration PDFs (if paper sizes changed)
 
@@ -102,20 +102,7 @@ Output goes to `calibration/`.
 
 ## Documentation
 
-The `README.md` and the Hugo documentation site (`hugo/`) must be kept in sync. See `AGENTS.md` for the mapping between README sections and Hugo content files.
-
-To preview the Hugo site locally, first initialize the Git submodules (required for the Hextra theme):
-
-```sh
-git submodule update --init --recursive
-```
-
-Then start the Hugo server:
-
-```sh
-cd hugo
-hugo server
-```
+End-user documentation lives in `README.md` and the per-plugin `plugins/<game>/README.md` files. This fork dropped the local Hugo documentation site to keep the repo lean; the hosted docs at https://alan-cha.github.io/silhouette-card-maker track upstream (Alan-Cha), not this fork.
 
 ## Adding a Plugin
 
@@ -125,4 +112,4 @@ See any existing plugin in `plugins/` for the expected structure. Each plugin ha
 - `deck_formats.py` — decklist format parsers
 - A game-specific API client
 
-Add a `README.md` in your plugin directory and a corresponding page in `hugo/content/plugins/`.
+Add a `README.md` in your plugin directory.

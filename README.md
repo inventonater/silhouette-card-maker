@@ -1,6 +1,6 @@
 # Custom Card Games with Silhouette Cutting Machines
 
-![](hugo/static/images/display.jpg)
+![](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/display.jpg)
 
 Ever wanted to make your own custom card game but without the hassle of a craft knife, a rotary cutter, or a paper guillotine? How about making your own proxies to playtest your favorite TCG?
 
@@ -12,7 +12,7 @@ If this is your first time here, check out the [tutorial](https://alan-cha.githu
 
 Watch me cut **104 cards in 26 minutes** without breaking a sweat!
 
-[![Proxying a MTG Commander Deck in 26 minutes](hugo/static/images/youtube_demo.png)](https://www.youtube.com/watch?v=RVHtqsRW8t8)
+[![Proxying a MTG Commander Deck in 26 minutes](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/youtube_demo.png)](https://www.youtube.com/watch?v=RVHtqsRW8t8)
 
 ## Purpose
 
@@ -151,7 +151,7 @@ The [Star Wars Unlimited plugin](plugins/star_wars_unlimited/README.md) supports
 ## create_pdf.py
 `create_pdf.py` is a CLI tool that layouts your card images into a PDF with registration marks that can be cut out with the appropriate cutting template in [`cutting_templates/`](cutting_templates/).
 
-![Example PDF](hugo/static/images/create_pdf.png)
+![Example PDF](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/create_pdf.png)
 
 ### Basic Usage
 
@@ -203,7 +203,7 @@ To create double-sided cards, put front images in the `game/front/` folder and b
 
 If your card images have rounded corners, they may be missing print bleed in the PDF. Because of the missing print bleed, when the cards are cut, they may have a sliver of white on the corners.
 
-![Extend corners](hugo/static/images/extend_corners.jpg)
+![Extend corners](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/extend_corners.jpg)
 
 The `--extend_corners` option can ameliorate this issue. You may need to experiment with the value but I recommend starting with `10`
 
@@ -221,7 +221,7 @@ However, if you would prefer to skip this manual step, you can skip the card nea
 python create_pdf.py --skip 4
 ```
 
-![Skip front](hugo/static/images/skip_front.png)
+![Skip front](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/skip_front.png)
 
 If you cut from the back, you might consider:
 
@@ -229,7 +229,7 @@ If you cut from the back, you might consider:
 python create_pdf.py --skip 0
 ```
 
-![Skip back](hugo/static/images/skip_back.png)
+![Skip back](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/skip_back.png)
 
 ### Registration Marks
 
@@ -334,7 +334,7 @@ First, you must determine the offset by using the [calibration sheets](calibrati
 
 `<paper size>_calibration.pdf` has a front page and a back page.
 
-![Calibration](hugo/static/images/calibration.png)
+![Calibration](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/calibration.png)
 
 The front page is a simple grid of squares.
 

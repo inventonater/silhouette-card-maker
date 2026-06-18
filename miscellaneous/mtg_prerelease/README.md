@@ -4,7 +4,7 @@
 
 For years, Wizards of the Coast produced prerelease cards with a date stamp. These prerelease cards have been discontinued but it is possible to replicate these stamps using a Silhouette cutting machine.
 
-![Golos prerelease stamp](../../hugo/static/images/golos_prerelease.png)
+![Golos prerelease stamp](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/golos_prerelease.png)
 
 To replicate the date stamp, you can use a Silhouette heat pen, which can apply foil using a Silhouette Studio template.
 
@@ -67,15 +67,15 @@ On your cutting machine, install the heat pen on the powered tool carriage.
 
 Open [letter-standard-v4_prerelease.studio3](./letter-standard-v4_prerelease.studio3) or [a4-standard-v3_prerelease.studio3](./a4-standard-v3_prerelease.studio3).
 
-![Design template](../../hugo/static/images/prerelease_template.png)
+![Design template](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/prerelease_template.png)
 
 Double click on the date and change the date as desired.
 
-![Change the text](../../hugo/static/images/prerelease_template_text.png)
+![Change the text](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/prerelease_template_text.png)
 
 If you are using the fine heat pen, choose a different font. I recommend something thing like *Lato Light*.
 
-![Change the font](../../hugo/static/images/prerelease_template_font.png)
+![Change the font](https://raw.githubusercontent.com/Alan-Cha/silhouette-card-maker/main/hugo/static/images/prerelease_template_font.png)
 
 ### Preheat the heat pen
 

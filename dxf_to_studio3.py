@@ -49,7 +49,7 @@ if platform.system() != "Windows":
     print("This script uses GUI automation to control Silhouette Studio, which requires Windows.", file=sys.stderr)
     print("To convert DXF files to .studio3 format on macOS/Linux, you must:", file=sys.stderr)
     print("  1. Manually open the DXF file in Silhouette Studio", file=sys.stderr)
-    print("  2. Follow the steps in hugo/content/miscellaneous/template.md", file=sys.stderr)
+    print("  2. Follow the steps at https://alan-cha.github.io/silhouette-card-maker/miscellaneous/template/", file=sys.stderr)
     sys.exit(1)
 
 # pyautogui: Used for mouse/keyboard automation (clicking UI elements, typing, hotkeys).
